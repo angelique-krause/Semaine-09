@@ -1,0 +1,26 @@
+$bg-color: #673ab7;
+$color-text: white;
+$span-color: red;
+$border-style: solid;
+$border-width: 5px;
+$color-text2: orange;
+
+
+body{
+  background-color: $bg-color;
+}
+p{
+  color: $color-text;
+}
+span{
+  color: $span-color;
+}
+div{
+  border: $color-text $border-style $border-width;
+}
+div > .min{
+  color: $color-text2;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}

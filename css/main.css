@@ -1,0 +1,23 @@
+body {
+  background-color: #673ab7;
+}
+
+p {
+  color: white;
+}
+
+span {
+  color: red;
+}
+
+div {
+  border: white solid 5px;
+}
+
+div > .min {
+  color: orange;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/*# sourceMappingURL=main.css.map */

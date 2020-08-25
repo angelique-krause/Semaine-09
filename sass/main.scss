@@ -1,3 +1,10 @@
+@function colors($color-name){
+  @return map-get($colors, $color-name)
+};
+@function values($value-name){
+  @return map-get($values, $value-name)
+};
+
 $colors: (
   primary: 3a4031f,
   secondary: #240b36,
@@ -6,7 +13,8 @@ $colors: (
 
 $values: (
   width-div: 400px,
-  height-div: 150px
+  height-div: 150px,
+  police: avec-serif
 );
 
 
@@ -45,8 +53,14 @@ div > .min{
   height: map-get($values, height-div);
   border: green solid 3px;
   margin-top: 20px;
+
 }
 .main-container p{
   color: map-get($colors, primary);
   background-color: map-get($colors, secondary);
+  font-family: map-get($values, police);
+}
+.little-container{
+  color: color(primary);
+
 }

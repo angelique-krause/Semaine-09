@@ -2,6 +2,11 @@ body {
   background-color: #673ab7;
 }
 
+div.couleur {
+  color: 3a4031f;
+  background-color: #240b36;
+}
+
 p {
   color: white;
 }
@@ -18,6 +23,18 @@ div > .min {
   color: orange;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.main-container {
+  width: 400px;
+  height: 250px;
+  border: green solid 3px;
+  margin-top: 20px;
+}
+
+.main-container p {
+  color: 3a4031f;
+  background-color: #240b36;
 }
 
 /*# sourceMappingURL=main.css.map */

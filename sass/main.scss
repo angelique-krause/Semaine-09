@@ -1,3 +1,14 @@
+$colors: (
+  primary: 3a4031f,
+  secondary: #240b36,
+  accent: #f2dc5d
+);
+$values: (
+  width-div: 400px,
+  height-div: 250px
+);
+
+
 $bg-color: #673ab7;
 $color-text: white;
 $span-color: red;
@@ -8,6 +19,10 @@ $color-text2: orange;
 
 body{
   background-color: $bg-color;
+}
+div.couleur{
+  color: map-get($colors, primary);
+  background-color: map-get($colors, secondary);
 }
 p{
   color: $color-text;
@@ -23,4 +38,14 @@ div > .min{
   padding-left: 10px;
   padding-right: 10px;
 
+}
+.main-container{
+  width: map-get($values, width-div);
+  height: map-get($values, height-div);
+  border: green solid 3px;
+  margin-top: 20px;
+}
+.main-container p{
+  color: map-get($colors, primary);
+  background-color: map-get($colors, secondary);
 }

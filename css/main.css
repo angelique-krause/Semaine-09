@@ -1,9 +1,13 @@
+@charset "UTF-8";
+/* deuxieme façon d'écrire les VARIABLES c'est en TABLEAU */
+/* Pemière façon d'écrire les VARIABLES */
+/* mon code */
 body {
   background-color: #673ab7;
 }
 
 div.couleur {
-  color: 3a4031f;
+  color: #34031f;
   background-color: #240b36;
 }
 
@@ -12,7 +16,7 @@ p {
 }
 
 span {
-  color: red;
+  color: green;
 }
 
 div {
@@ -32,12 +36,14 @@ div > .min {
   margin-top: 20px;
 }
 
+/* avec le map-get TABLEAU DE VALEURS */
 .main-container p {
-  color: 3a4031f;
+  color: #34031f;
   background-color: #240b36;
   font-family: avec-serif;
 }
 
+/* avec les FONCTIONS */
 .little-container {
   color: color(primary);
 }

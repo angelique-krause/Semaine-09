@@ -4,9 +4,9 @@
 @function values($value-name){
   @return map-get($values, $value-name)
 };
-
+/* deuxieme façon d'écrire les VARIABLES c'est en TABLEAU */
 $colors: (
-  primary: 3a4031f,
+  primary: #34031f,
   secondary: #240b36,
   accent: #f2dc5d
 );
@@ -17,13 +17,15 @@ $values: (
   police: avec-serif
 );
 
-
+/* Pemière façon d'écrire les VARIABLES */
 $bg-color: #673ab7;
 $color-text: white;
-$span-color: red;
+$span-color: green;
 $border-style: solid;
 $border-width: 5px;
 $color-text2: orange;
+
+/* mon code */
 
 
 body{
@@ -55,11 +57,13 @@ div > .min{
   margin-top: 20px;
 
 }
+/* avec le map-get TABLEAU DE VALEURS */
 .main-container p{
   color: map-get($colors, primary);
   background-color: map-get($colors, secondary);
   font-family: map-get($values, police);
 }
+/* avec les FONCTIONS */
 .little-container{
   color: color(primary);
 
